@@ -7,13 +7,29 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Dashboard from './dashboard';
 
 const router = createBrowserRouter([
 
-  {
-    path: "/",
-    element: <App />,
+  {  
+    element: <App/>,
+    children:
+     [
+      {
+        path: "/",
+        element: <Home/>,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard/>,
+      },
+
+
+    ]
   },
+
+
+  
 
   {
     path: "/auth/sign-in",
