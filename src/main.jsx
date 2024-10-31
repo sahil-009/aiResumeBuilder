@@ -13,7 +13,7 @@ if (!PUBLISHABLE_KEY) {
 }
 
 
-import { Home } from './home'
+
 import {
   createBrowserRouter,
   RouterProvider,
